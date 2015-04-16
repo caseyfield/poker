@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Poker</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<p>
+<% card=["ace", 2, 3, 4, 5, 6, 7, 8, 9, 10,"jack", "queen", "king"] %>
+<% suit=["hearts", "diamonds", "spades", "clubs"] %>
+<img src="http://golearntocode.com/images/cards/<%= card.sample %>_of_<%= suit.sample %>.png" /><img src="http://golearntocode.com/images/cards/<%= card.sample %>_of_<%= suit.sample %>.png" /><img src="http://golearntocode.com/images/cards/<%= card.sample %>_of_<%= suit.sample %>.png" /><img src="http://golearntocode.com/images/cards/<%= card.sample %>_of_<%= suit.sample %>.png" /><img src="http://golearntocode.com/images/cards/<%= card.sample %>_of_<%= suit.sample %>.png" />
+</p>
+
+</body>
+</html>
